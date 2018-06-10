@@ -42,6 +42,12 @@ public class Ringtone extends CordovaPlugin {
 			final CallbackContext callbackContext) {
 		cordova.getThreadPool().execute(new Runnable() {
 			public void run() {
+				// Write Permission Added
+				if (!Settings.System.canWrite(cordova.getActivity().getApplicationContext())){
+          			Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+          			cordova.getActivity().startActivity(intent);
+        		}
+
 				if (tipo.equals("alarm") || tipo.equals("notification")
 						|| tipo.equals("ringtone")) {
 					setAssets(tipo, file, title, artist, callbackContext);
