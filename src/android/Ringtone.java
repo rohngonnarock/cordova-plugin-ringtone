@@ -1,4 +1,4 @@
-package com.hiraqui.ringtone;
+package com.rohngonnarock.ringtone;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -19,12 +19,15 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 
+import android.provider.Settings;
+import android.content.Intent;
+
 /**
  * This class echoes a string called from JavaScript.
  */
-public class Ringtone extends CordovaPlugin {
+public class ringtone extends CordovaPlugin {
 
-	@Override
+    @Override
 	public boolean execute(String action, JSONArray args,
 			CallbackContext callbackContext) throws JSONException {
 		if (action.equals("echo")) {

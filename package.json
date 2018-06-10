@@ -1,0 +1,28 @@
+{
+  "name": "com.rohngonnarock.ringtone",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "com.rohngonnarock.ringtone",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohngonnarock/cordova-plugin-ringtone.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Rahul Prajapati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohngonnarock/cordova-plugin-ringtone/issues"
+  },
+  "homepage": "https://github.com/rohngonnarock/cordova-plugin-ringtone#readme",
+  "dependencies": {
+    "user": "0.0.0"
+  }
+}
