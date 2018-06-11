@@ -1,4 +1,4 @@
-package com.rohngonnarock.ringtone;
+package com.hiraqui.ringtone;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -25,9 +25,9 @@ import android.content.Intent;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class ringtone extends CordovaPlugin {
+public class Ringtone extends CordovaPlugin {
 
-    @Override
+	@Override
 	public boolean execute(String action, JSONArray args,
 			CallbackContext callbackContext) throws JSONException {
 		if (action.equals("echo")) {
@@ -47,9 +47,9 @@ public class ringtone extends CordovaPlugin {
 			public void run() {
 				// Write Permission Added
 				if (!Settings.System.canWrite(cordova.getActivity().getApplicationContext())){
-          			Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
-          			cordova.getActivity().startActivity(intent);
-        		}
+					Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+					cordova.getActivity().startActivity(intent);
+				}
 
 				if (tipo.equals("alarm") || tipo.equals("notification")
 						|| tipo.equals("ringtone")) {
