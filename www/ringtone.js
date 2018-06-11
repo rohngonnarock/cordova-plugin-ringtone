@@ -39,7 +39,7 @@ RingtoneManager.prototype.setRingtone = function(file, title, artist, type,
  * Ringtone, notification tone or alarm tone If you have a writable sdcard the
  * new file is created in "sdcard/Ringtones/myFile.mp3" If the sdcard is not
  * writable or if it is missing, the new file is created inside the application
- * folder "data/com.hiraqui.myApplication/ringtones/myFile.mp3"
+ * folder "data/com.rohngonnarock.myApplication/ringtones/myFile.mp3"
  * 
  * @param {String}
  *            file The path to the audio file starting with

@@ -1,15 +1,15 @@
-# com.hiraqui.ringtone v0.6.1
+# com.rohngonnarock.ringtone v0.6.1
 
 Ringtone
 ======
 
 A Cordova / Phonegap ringtone plugin for Android. Set an audio file as ringtone, notification tone or alarm tone.
 
-	cordova plugin add https://github.com/Hiraqui/cordova-plugin-ringtone
+	cordova plugin add https://github.com/rohngonnarock/cordova-plugin-ringtone
 	
 	or
 
-  	cordova plugin add com.hiraqui.ringtone
+  	cordova plugin add com.rohngonnarock.ringtone
 
 Methods
 -------
@@ -42,7 +42,7 @@ window.ringtone.exportAssetAndSetRingtone
 
 Copy an asset sound file to the sdcard or app directory and set it as Ringtone, notification tone or alarm tone
 *If you have a writable sdcard the new file is created in "sdcard/Ringtones/myFile.mp3"
-*If the sdcard is not writable or if it is missing, the new file is created inside the application folder "data/com.hiraqui.myApplication/ringtones/myFile.mp3"
+*If the sdcard is not writable or if it is missing, the new file is created inside the application folder "data/com.rohngonnarock.myApplication/ringtones/myFile.mp3"
 
     param {String}
         file The path to the asset audio file ("/android_asset/www/...")
@@ -83,7 +83,7 @@ Example 2
 
 //Seting a sound file from the SD card as notification tone
 
-    window.ringtone.setRingtone("file:///storage/sdcard/Android/data/com.hiraqui.myApplication/files/beep.mp3",
+    window.ringtone.setRingtone("file:///storage/sdcard/Android/data/com.rohngonnarock.myApplication/files/beep.mp3",
         "Beep", "Myself", "notification", 
         function(success) {
         	alert(success);
