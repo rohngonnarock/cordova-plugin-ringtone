@@ -48,6 +48,7 @@ public class Ringtone extends CordovaPlugin {
 				// Write Permission Added
 				if (!Settings.System.canWrite(cordova.getActivity().getApplicationContext())){
 					Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+					intent.setData(Uri.parse("package:io.ionic.starter"));
 					cordova.getActivity().startActivity(intent);
 				}
 
